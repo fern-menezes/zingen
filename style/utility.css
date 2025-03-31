@@ -18,6 +18,7 @@
     --max-width: 375px;
     /* quando chegar a 375px, vai pegar os 100 e aplicar o paddin no eixo x nos dois lados da página, direita e esquerda */
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
 }
 .desktop-only{
     display: none;
@@ -36,13 +37,24 @@
     display: grid;
     gap: 1rem;
 }
+.gap-1{
+    gap: 1rem;
+}
+.gap-1\.5{
+    gap: 1.5rem;
+}
+
+.items-center{
+    align-items: center;
+    justify-content: center;
+}
 
 @media (width >= 80em){
     .container{
-        --max-width: 800px;
+        --max-width: 90rem;
     }
 
-    .display-only{
+    .desktop-only{
         display: initial;
     }
 
@@ -50,5 +62,21 @@
     .even-colums{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    }
+}
+
+@media (width >= 820px) and (width < 1180px){
+    .container{
+        --max-width: 80rem;
+    }
+
+    .desktop-only{
+        display: initial;
+    }
+
+    /** Automatiza visualização em linhas para o desktop */
+    .even-colums{
+        grid-auto-flow: column;
+        grid-auto-columns: 2fr;
     }
 }

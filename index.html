@@ -10,16 +10,34 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Zingen - Karaokê</title>
 </head>
-<body class="flex">
-    <button class="btn btn-lg">
-        LoveFool
-    </button>
-    <button aria-label="Love me" class="btn btn-md"></button>
-    <button aria-label="Fool me" class="btn btn-sm"></button>
+<body>
+    <header>
+        <div class="container py-base">
 
-    <a href="#" class="social" aria-label="instagram"></a>
-    <a href="#" class="social" aria-label="TikTok"></a>
-    <a href="#" class="social" aria-label="X"></a>
-    <a href="#" class="social" aria-label="Discord"></a>
+            <nav class="flex items-center gap-1.5">
+                <a href="#">
+                    <img src="./assets/icons/logo.svg" alt="Zingen Logo">
+                </a>
+
+                <a href="#about" class="desktop-only">Conheça o app</a>
+                <a href="#about" class="desktop-only">Funcionalidades</a>
+                <a href="#pricing" class="desktop-only">Planos e preços</a>
+
+                <a href="#download" class="btn btn-sm"> Baixar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container py-xl">
+            <img src="./assets/music-bars.svg" alt="Music bars">
+            <h1>Quem canta seus males espanta</h1>
+            <p>Cantar nunca foi tão fácil</p>
+            <div class="buttons flex items-center gap-1">
+                <a href="#pricing" aria-label="Ver Planos" class="btn btn-md"></a>
+                <a href="#download" class="btn btn-md">Baixar agora</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
