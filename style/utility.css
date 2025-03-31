@@ -25,7 +25,7 @@
 }
 
 /** Automatiza visualização em colunas para o mobile */
-.even-colums{
+.even-columns{
     display: grid;
     gap: 1rem;
 }
@@ -59,7 +59,7 @@
     }
 
     /** Automatiza visualização em linhas para o desktop */
-    .even-colums{
+    .even-columns{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
@@ -75,7 +75,7 @@
     }
 
     /** Automatiza visualização em linhas para o desktop */
-    .even-colums{
+    .even-columns{
         grid-auto-flow: column;
         grid-auto-columns: 2fr;
     }
