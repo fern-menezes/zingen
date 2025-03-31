@@ -46,7 +46,7 @@
         display: initial;
     }
 
-    /** Automatiza visualização em linhas para o mobile */
+    /** Automatiza visualização em linhas para o desktop */
     .even-colums{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;

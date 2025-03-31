@@ -69,6 +69,15 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/*tipo uma mascara de recorte pra momstrar o gradiente nas letras*/
+a:hover{
+    background: linear-gradient(90deg, var(--brand-color-primary) 0%, var(--brand-color-secondary)100%);
+
+    --webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /* Acessibilidade para os leitores de tela interpretarem como lista, já que resetamos o estilo das listas*/
 ul[role="list"]{
     list-style: none;
