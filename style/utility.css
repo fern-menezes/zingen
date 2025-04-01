@@ -64,19 +64,3 @@
         grid-auto-columns: 1fr;
     }
 }
-
-@media (width >= 820px) and (width < 1180px){
-    .container{
-        --max-width: 80rem;
-    }
-
-    .desktop-only{
-        display: initial;
-    }
-
-    /** Automatiza visualização em linhas para o desktop */
-    .even-columns{
-        grid-auto-flow: column;
-        grid-auto-columns: 2fr;
-    }
-}
